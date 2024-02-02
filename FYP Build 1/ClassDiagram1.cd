@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="EnemyManager">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Assets\Scripts\EnemyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LinearMovement">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Movement\LinearMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrbitMovement">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAQAAAAAACAAAAAAAAAAQAAAAAAAAAAAAABAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Movement\OrbitMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrackingMovement">
+    <Position X="11.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAEAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Movement\TrackingMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZigZagMovement" BaseTypeListCollapsed="true">
+    <Position X="13" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Movement\ZigZagMovement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="PlayerMagicSystem">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCQAAIAIACAAAAAAAAAAwAAIAAAAAAAAABAgIgAAAEA=</HashCode>
+      <FileName>Assets\Scripts\PlayerMagicSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DamageOverTime" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQBAIAAACAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Secondary Effect\DamageOverTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SecondaryStructure" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Secondary Effect\SecondaryStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spell" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAADAAAAAAAAAAAAACAAAAAAAAAAAAQBAAAAAgAEA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Spell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpellScriptableObject" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="SpellScriptableObject.damageTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Spells\SpellScriptableObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="SpellScriptableObject.attackTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Spells\SpellScriptableObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQQAAAAgEAAAAAAggABAAAAAAAABMAAAgAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spells\SpellScriptableObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="IMovement">
+    <Position X="11" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interface\IMovement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
