@@ -4948,6 +4948,8 @@ GameObject:
   - component: {fileID: 5561580524489082316}
   - component: {fileID: 9191080723678466542}
   - component: {fileID: 8970497483519240392}
+  - component: {fileID: -6529732803502307292}
+  - component: {fileID: -1229274543177158180}
   m_Layer: 0
   m_Name: Spell_LightningSphere
   m_TagString: Untagged
@@ -5035,6 +5037,7 @@ MonoBehaviour:
   bonus: {fileID: 9191080723678466542}
   collidedWith: {fileID: 0}
   startingPosition: {x: 0, y: 0, z: 0}
+  caster: {fileID: 0}
 --- !u!114 &9191080723678466542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5066,3 +5069,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1038807755677619011, guid: c17db95a6933ab4459a747b050ac05f9, type: 3}
   actorAttachedTo: {fileID: 0}
+  spellAttachedTo: {fileID: 0}
+--- !u!114 &-6529732803502307292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8683889100131158609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7007ca9e9edbf61498019ccc4612112b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellToApplyTo: {fileID: 0}
+  start: 0
+  duration: 10
+  forceAmount: 20
+--- !u!114 &-1229274543177158180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8683889100131158609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4befe666018bf84c9155efe632c29c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 0
+  timer: 0
+  parent: {fileID: 0}
