@@ -22,12 +22,14 @@ public class PlayerMagicSystem : MonoBehaviour
 
     //public List<Spell> spellBook; //array easier?
     public Spell[] spellBook;
+    [HideInInspector]
     private int currentSpellBookIndex = 0;
 
     //Text object that will hold the name of the currently equiped spell
     public TMP_Text spellNameText;
     public TMP_Text manaCounterText;
 
+    [HideInInspector]
     public GameObject lastHitGameObject;
 
     private void Start() //delete if dont need
@@ -47,7 +49,7 @@ public class PlayerMagicSystem : MonoBehaviour
 
     private void Update()
     {
-        if (!castingMagic && Input.GetKeyDown( KeyCode.Q ) ) //if we arent casting magic already or in cooldown and Q is pressed 
+        if (!castingMagic && Input.GetKeyDown( KeyCode.Q ) ) //if we arent casting magic already or in cooldown and Q is pressed //REBIND AS NESSICARY FOR YOUR USE
         {
             //Update our boolean and reset our casting timer before we cast our spell
             castingMagic = true;
@@ -71,30 +73,11 @@ public class PlayerMagicSystem : MonoBehaviour
 
         if (castingMagic == false && atMaxMana == false) //need to rework these conditions, is true when pressing Q for a sec
         {
-            //StartCoroutine(manaRechargeRoutine());
-            //InvokeRepeating("manaRecharge", 1f, manaRechargeRate);
             manaRecharge();
         }
 
-        if(Input.GetKeyDown(KeyCode.E)) //change what spell to cast 
-        {
-            currentSpellBookIndex++;
-            if(currentSpellBookIndex <= spellBook.Length -1)
-            {
-                spellToCast = spellBook[currentSpellBookIndex];
-                spellNameText.text = spellToCast.spellToCast.spellName;
-            }
+        changeSpellText(); //Used for text objects, if you want a purely icon based display comment this out
 
-            if(currentSpellBookIndex >= spellBook.Length)
-            {
-                currentSpellBookIndex = 0;
-                spellToCast = spellBook[currentSpellBookIndex];
-                spellNameText.text = spellToCast.spellToCast.spellName;
-            }
-
-        }
-
-        // Debug.Log("Current Mana: " + currentMana);
         manaCounterText.text = "Mana: " + (int)currentMana;
 
 
@@ -102,18 +85,36 @@ public class PlayerMagicSystem : MonoBehaviour
 
     }
 
+    public void changeSpellText()
+    {
+        if (Input.GetKeyDown(KeyCode.E)) //change what spell to cast 
+        {
+            currentSpellBookIndex++;
+            if (currentSpellBookIndex <= spellBook.Length - 1)
+            {
+                spellToCast = spellBook[currentSpellBookIndex];
+                spellNameText.text = spellToCast.spellToCast.spellName; //update the text object to use the spells name
+            }
+
+            if (currentSpellBookIndex >= spellBook.Length)
+            {
+                currentSpellBookIndex = 0;
+                spellToCast = spellBook[currentSpellBookIndex];
+                spellNameText.text = spellToCast.spellToCast.spellName; //update the text object to use the spells name
+            }
+
+        }
+    }
+
     public void castSpell()
     {
-        //Create the spell object  at the players casting position
-        spellToCast.caster = this.gameObject;
-        Instantiate(spellToCast, castPoint.position, castPoint.rotation);
+        spellToCast.caster = this.gameObject; //make us the owner of the spell
+        Instantiate(spellToCast, castPoint.position, castPoint.rotation);  //Create the spell object  at the players casting position
         //deduct the amount of mana required to cast the spell from the player
         currentMana -= spellToCast.spellToCast.ManaCost;
         if (currentMana < 0) currentMana = 0; //reset mana to 0 if we somehow go to 0, should be prevented by if statement though so i may remove this
 
         atMaxMana = false;
-
-       
     }
 
     //not applying the recharing mana, commented out for now
@@ -134,7 +135,6 @@ public class PlayerMagicSystem : MonoBehaviour
             currentMana = maxMana;
             atMaxMana = true;
         }
-        //Debug.Log("Current Mana: " + currentMana);
     }
 }
 

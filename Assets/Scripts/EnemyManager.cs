@@ -7,7 +7,8 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public float health;
-    public float moveSpeed;
+    [HideInInspector]public float moveSpeed;
+    public float maxMoveSpeed;
     public float attackSpeed;
 
 
@@ -32,6 +33,7 @@ public class EnemyManager : MonoBehaviour
     void Start()
     {
         health = 100;
+        moveSpeed = maxMoveSpeed;
     }
 
     // Update is called once per frame
@@ -39,9 +41,14 @@ public class EnemyManager : MonoBehaviour
     {
         //Debug.Log("Health: " + health);
 
-        if(takingDOT == true)
+/*        if(takingDOT == true)
         {
             takeSpellDOT(dotAmount, dotDamageDuration);
+        }*/
+
+        if(health <= 0)
+        {
+            Destroy(this.gameObject);
         }
     }
 
@@ -50,13 +57,13 @@ public class EnemyManager : MonoBehaviour
 
     }
 
-    public void triggerDOT(float damage, float duration)
+/*    public void triggerDOT(float damage, float duration)
     {
         //StartCoroutine(takeDOT(damage, duration));
         float totalDamage = damage * duration;
         takingDOT = true;
         takeSpellDOT(damage, duration);
-    }
+    }*/
 
     public void takeDamageFromSpell(SpellScriptableObject spellHitBy )
     {
@@ -106,12 +113,12 @@ public class EnemyManager : MonoBehaviour
         health -= spellHitBy.damage; 
     }
 
-    IEnumerator takeDOT(float damage, float duration)
+/*    IEnumerator takeDOT(float damage, float duration)
     {
         float i = 0;
         while (true) //true is just while the coroutine is running
         {
-/*            health -= damage; //*Time.deltaTime;*/
+*//*            health -= damage; //*Time.deltaTime;*//*
             i = +1;
             Debug.Log("Health:" + health);
             //yield return new WaitForSeconds();
@@ -145,5 +152,5 @@ public class EnemyManager : MonoBehaviour
             dotAmount = 0;
             dotDamageDuration = 0;
         }
-    }
+    }*/
 }

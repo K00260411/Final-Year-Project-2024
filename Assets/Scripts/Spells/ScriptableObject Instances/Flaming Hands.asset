@@ -10,18 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 777e9ffb73617054d9c7d405cd67ea12, type: 3}
-  m_Name: Firebolt
+  m_Name: Flaming Hands
   m_EditorClassIdentifier: 
   ManaCost: 5
-  Lifetime: 100
-  Speed: 15
-  damage: 10
+  Lifetime: 2
+  Speed: 0
+  damage: 20
   spellRadius: 2
   spellDamageTyp: 3
-  spellAttackType: 4
-  spellName: FireBolt
-  spellCost: 10
-  spellRange: 100
+  spellAttackType: 0
+  spellName: Flaming Hands
+  spellCost: 0
+  spellRange: 10
   castTime: 0
   effectText: 
   spellArtIcon: {fileID: 0}

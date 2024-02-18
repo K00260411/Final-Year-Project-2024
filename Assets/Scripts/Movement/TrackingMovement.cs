@@ -21,6 +21,8 @@ public class TrackingMovement : MonoBehaviour
         //Get the spell script we are currently attached to
         spellAttachedTo = GetComponent<Spell>();
         //targetObject = GameObject.Find("Enemy");
+        
+        //Add in a a failsafe for if the player has not hit anything yet to prevent a null error
         targetObject = spellAttachedTo.caster.GetComponent<PlayerMagicSystem>().lastHitGameObject;
     }
 

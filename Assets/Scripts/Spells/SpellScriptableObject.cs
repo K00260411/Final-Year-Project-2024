@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class SpellScriptableObject : ScriptableObject
 {
     //Define all of our spells required characteristics
+    [Header("Spell Details")]
     public float ManaCost = 5f;
     public float Lifetime = 5f;
     public float Speed = 15f;

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SlowEnemyMovement : MonoBehaviour
 {
+    public float speedToReduceTo;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,15 @@ public class SlowEnemyMovement : MonoBehaviour
     void Update()
     {
         
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Enemy")
+        {
+            other.gameObject.GetComponent<EnemyManager>().moveSpeed = speedToReduceTo;
+        }
+
+        //maybe adding a remove slow enemy component might not be ideal
     }
 }

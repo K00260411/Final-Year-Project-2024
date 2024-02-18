@@ -21,6 +21,7 @@ MonoBehaviour:
   spellAttackType: 4
   spellName: IceGuard
   spellCost: 5
-  spellRange: 0
+  spellRange: 10
   castTime: 0
   effectText: 
+  spellArtIcon: {fileID: 0}
