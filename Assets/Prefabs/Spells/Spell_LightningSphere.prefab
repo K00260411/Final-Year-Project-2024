@@ -5037,6 +5037,7 @@ MonoBehaviour:
   collidedWith: {fileID: 0}
   startingPosition: {x: 0, y: 0, z: 0}
   caster: {fileID: 0}
+  spellCircle: {fileID: 0}
 --- !u!114 &9191080723678466542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5066,9 +5067,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1ef39027ec7f374f828b1b3a6d6aeb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetObject: {fileID: 1038807755677619011, guid: c17db95a6933ab4459a747b050ac05f9, type: 3}
+  targetObject: {fileID: 0}
   actorAttachedTo: {fileID: 0}
   spellAttachedTo: {fileID: 0}
+  permittedDistance: 0
 --- !u!114 &-8436099042226880048
 MonoBehaviour:
   m_ObjectHideFlags: 0

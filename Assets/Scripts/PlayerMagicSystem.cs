@@ -30,7 +30,7 @@ public class PlayerMagicSystem : MonoBehaviour
     public TMP_Text manaCounterText;
 
     [HideInInspector]
-    public GameObject lastHitGameObject;
+    public GameObject lastHitGameObject = null;
 
     private void Start() //delete if dont need
     {

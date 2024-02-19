@@ -4958,7 +4958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spellToApplyTo: {fileID: 0}
   start: 0
-  maxDuration: 10
+  maxDuration: 2
   currentDuration: 0
   dotDamage: 10
 --- !u!1 &6904577337600813394
