@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using GRFON;
+using System.IO;
 
 public class PlayerMagicSystem : MonoBehaviour
 {
@@ -31,6 +33,15 @@ public class PlayerMagicSystem : MonoBehaviour
 
     [HideInInspector]
     public GameObject lastHitGameObject = null;
+
+    [HideInInspector] public enum languages { ENG, FRE, JAP, GER}
+    public languages spellLanguage;
+    public string translationFilePath;
+
+    private void Awake()
+    {
+        
+    }
 
     private void Start() //delete if dont need
     {
@@ -93,6 +104,27 @@ public class PlayerMagicSystem : MonoBehaviour
             if (currentSpellBookIndex <= spellBook.Length - 1)
             {
                 spellToCast = spellBook[currentSpellBookIndex];
+                spellNameText.text = getSpellName(spellToCast.spellToCast.spellName); //update the text object to use the spells name
+            }
+
+            if (currentSpellBookIndex >= spellBook.Length)
+            {
+                currentSpellBookIndex = 0;
+                spellToCast = spellBook[currentSpellBookIndex];
+                spellNameText.text = getSpellName(spellToCast.spellToCast.spellName); //update the text object to use the spells name
+            }
+            //Debug.Log(spellToCast.spellToCast.spellName);
+
+        }
+    }    
+/*    public void changeSpellText()
+    {
+        if (Input.GetKeyDown(KeyCode.E)) //change what spell to cast 
+        {
+            currentSpellBookIndex++;
+            if (currentSpellBookIndex <= spellBook.Length - 1)
+            {
+                spellToCast = spellBook[currentSpellBookIndex];
                 spellNameText.text = spellToCast.spellToCast.spellName; //update the text object to use the spells name
             }
 
@@ -104,7 +136,7 @@ public class PlayerMagicSystem : MonoBehaviour
             }
 
         }
-    }
+    }*/
 
     public void castSpell()
     {
@@ -136,5 +168,66 @@ public class PlayerMagicSystem : MonoBehaviour
             atMaxMana = true;
         }
     }
+
+    public string getSpellName(string nameIn)
+    {
+        //Debug.Log(nameIn);
+        string path = "Assets/Scripts/spellData.grfon"; //refactored to other variable
+        using (Stream stream = new FileStream(translationFilePath, FileMode.Open)) //make a new stream object using the specified file path to read from
+        {
+            GrfonDeserializer des = new GrfonDeserializer(new GrfonStreamInput(stream)); //take in the contents as a node
+            GrfonCollection data = des.Parse() as GrfonCollection; //save contents into a collection of nodes
+            if (data == null) data = new GrfonCollection();
+            //nameIn = data.GetString("SpellName", "notFound");  //Can find the collection
+            //Debug.Log(data.ContainsKey("SpellName")); //TRUE output
+            //nameIn = data.GetString("FireBolt", "notFound"); //cannot find the key within that collection
+            //Debug.Log(data.GetCollection("SpellName").GetString("FireBolt")); //IT WORKS
+            //Debug.Log(data.GetCollection("SpellName").GetString("FlamingHands")); //hand passing in string works
+            nameIn = data.GetCollection("SpellName").GetString(nameIn, "notFound"); //ITS WORKING NOW LETS GOOOO
+            //Debug.Log(data.ContainsKey("FireBolt")); // FALSE output
+
+            Debug.Log(nameIn); //notFound output
+
+/*            GrfonCollection names = GrfonCollection.FromString(nameIn);
+            Debug.Log(names.ContainsKey("FireBolt"));
+            nameIn = data.GetString("FireBolt", "nope");*/
+            //nameIn = data.GetString("FireBolt", "notFound"); //will not find the key/value pair inside that collection. Docs do not specify how to obtain things inside a collection
+
+
+            // Debug.Log(data.GetStringList("SpellName"));
+            //GRFON.GrfonValue temp = data.GetCollection("SpellName");
+            //Debug.Log(nameIn);
+            //Debug.Log(data.GetString(name));
+            //nameIn = data.ToString();
+            //Debug.Log(data.GetStringList("SpellName").ToString());
+            //data.GetString(("SpellName", nameIn);
+            //Debug.Log(data);
+            //nameIn = data.GetString(nameIn,"default");
+            //nameIn = data.GetString("SpellName");
+            //Debug.Log(data.GetString("SpellName"));
+
+        }
+
+
+        return nameIn;
+    }
+
+
+/*    public static void Load()
+    {
+        string path = "Assets/Scripts/GRFON/spellData.grfon";
+        using (Stream stream = new FileStream(path, FileMode.Open))
+        {
+            GrfonDeserializer des = new GrfonDeserializer(new GrfonStreamInput(stream));
+            GrfonCollection data = des.Parse() as GrfonCollection;
+            if (data == null) data = new GrfonCollection();
+
+            gameMode = (GameMode)System.Enum.Parse(typeof(GameMode),
+                    data.GetString("gameMode", "Sandbox"), true);
+            spentXP = data.GetInt("spentXP");
+            unspentXP = data.GetInt("unspentXP");
+            projectsDone = data.GetStringList("projects");
+        }
+    }*/
 }
 

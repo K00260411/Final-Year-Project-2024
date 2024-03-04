@@ -1030,8 +1030,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Spell Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4c7619e03f889784991d595744bdde1e, type: 2}
-  m_sharedMaterial: {fileID: 3320586409984728983, guid: 4c7619e03f889784991d595744bdde1e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1091,7 +1091,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -58.66974, w: 0}
+  m_margin: {x: 0, y: 0, z: -108.002655, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1726,7 +1726,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2968606342956161503, guid: c17db95a6933ab4459a747b050ac05f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 6.17
+      value: -7.59
       objectReference: {fileID: 0}
     - target: {fileID: 2968606342956161503, guid: c17db95a6933ab4459a747b050ac05f9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1734,7 +1734,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2968606342956161503, guid: c17db95a6933ab4459a747b050ac05f9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.13
+      value: 13.83
       objectReference: {fileID: 0}
     - target: {fileID: 2968606342956161503, guid: c17db95a6933ab4459a747b050ac05f9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1827,7 +1827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2968606342956161503, guid: c17db95a6933ab4459a747b050ac05f9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.15
+      value: -13.48
       objectReference: {fileID: 0}
     - target: {fileID: 2968606342956161503, guid: c17db95a6933ab4459a747b050ac05f9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1835,7 +1835,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2968606342956161503, guid: c17db95a6933ab4459a747b050ac05f9, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.54
+      value: 8.8
       objectReference: {fileID: 0}
     - target: {fileID: 2968606342956161503, guid: c17db95a6933ab4459a747b050ac05f9, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1937,6 +1937,10 @@ PrefabInstance:
     - target: {fileID: 982235264102223281, guid: c6c078e1cd0436e4098b8f533557fb52, type: 3}
       propertyPath: timeBetweenRecharge
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 982235264102223281, guid: c6c078e1cd0436e4098b8f533557fb52, type: 3}
+      propertyPath: translationFilePath
+      value: Assets/Scripts/spellData.grfon
       objectReference: {fileID: 0}
     - target: {fileID: 982235264102223281, guid: c6c078e1cd0436e4098b8f533557fb52, type: 3}
       propertyPath: spellBook.Array.size

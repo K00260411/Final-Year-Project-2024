@@ -19,7 +19,7 @@ MonoBehaviour:
   spellRadius: 2
   spellDamageTyp: 5
   spellAttackType: 4
-  spellName: Lightning Sphere
+  spellName: LightningSphere
   spellCost: 20
   spellRange: 10
   castTime: 0

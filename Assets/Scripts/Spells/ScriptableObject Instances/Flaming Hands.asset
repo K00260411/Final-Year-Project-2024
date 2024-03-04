@@ -19,7 +19,7 @@ MonoBehaviour:
   spellRadius: 2
   spellDamageTyp: 3
   spellAttackType: 0
-  spellName: Flaming Hands
+  spellName: FlamingHands
   spellCost: 0
   spellRange: 10
   castTime: 0
