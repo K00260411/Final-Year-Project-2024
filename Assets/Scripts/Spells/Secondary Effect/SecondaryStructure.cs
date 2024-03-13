@@ -1,12 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
-public class SecondaryStructure : MonoBehaviour
-{
 
-    public Spell spellToApplyTo;
-    public bool start = false;
+public abstract class SecondaryStructure : MonoBehaviour
+{
+    //Hold data on what entity casted our spell so we can apply the effects to them
+    public GameObject caster;
+
     public virtual void applyBonusEffect()
     {
 

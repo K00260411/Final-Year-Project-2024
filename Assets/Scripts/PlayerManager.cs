@@ -5,10 +5,13 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     public float health;
+    [HideInInspector] public float moveSpeed;
+    public float maxMoveSpeed;
+    public float attackSpeed;
     // Start is called before the first frame update
     void Start()
     {
-        
+       
     }
 
     // Update is called once per frame
