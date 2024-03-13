@@ -1,0 +1,51 @@
+//FRENCH FILE FOR INITIAL TESTING - GOOGLE TRANSLATED
+SpellName:{
+    FireBolt: FireBolt
+    FlamingHands: Flaming Hands
+    IceGuard: Ice Guard
+    LightningSphere: Lightning Sphere
+    //Key				//Value
+}
+
+//Better to just use the spells name as its key for the effect text
+//Might introduce dup data if you want to use the same effect text as another spell
+//but this is the most user friendly method 
+EffectText:{
+	FireBolt: Fires a bolt of fire at the enemy
+	FlamingHands: Fire fans out of your hands burning those within range
+	IceGuard: Orbs of frost protect you as you fight
+	LightningSphere: Lightning zips towards your enemies
+
+}
+
+
+SpellDamageTyp: {
+	acid: acid
+	bludgeoning: bludgeoning
+	cold: cold
+	fire: fire
+	force: force
+	lightning: lightning
+	necrotic: necrotic
+	piercing: piercing
+	poison: poison
+	psychic: psychic
+	radiant: radiant 
+	slashing: slashing
+	thunder: thunder
+
+}
+
+
+SpellAttackType: {
+	cone: cone
+	line: line
+	radius: radius
+	cube: cube
+	bolt: bolt
+
+}
+
+
+//any other things to translate
+

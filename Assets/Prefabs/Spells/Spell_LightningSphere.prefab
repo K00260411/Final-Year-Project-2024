@@ -4946,7 +4946,6 @@ GameObject:
   - component: {fileID: 5277892051313130351}
   - component: {fileID: 7932483709882150035}
   - component: {fileID: 5561580524489082316}
-  - component: {fileID: 9191080723678466542}
   - component: {fileID: 8970497483519240392}
   - component: {fileID: -8436099042226880048}
   m_Layer: 0
@@ -5033,28 +5032,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spellToCast: {fileID: 11400000, guid: 02e99ed95139d1040a185b260c4c5751, type: 2}
-  bonus: {fileID: 9191080723678466542}
+  bonus: {fileID: 0}
   collidedWith: {fileID: 0}
   startingPosition: {x: 0, y: 0, z: 0}
   caster: {fileID: 0}
   spellCircle: {fileID: 0}
---- !u!114 &9191080723678466542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8683889100131158609}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ab4f271080c0134b8ac5937e461e05b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spellToApplyTo: {fileID: 5561580524489082316}
-  start: 0
-  maxDuration: 10
-  currentDuration: 0
-  dotDamage: 2
 --- !u!114 &8970497483519240392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5078,7 +5060,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8683889100131158609}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7007ca9e9edbf61498019ccc4612112b, type: 3}
   m_Name: 

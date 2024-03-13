@@ -1,0 +1,48 @@
+//FRENCH FILE FOR INITIAL TESTING - GOOGLE TRANSLATED
+SpellName:{
+    FireBolt: Feuerblitz
+    FlamingHands: Flammende Hände
+    IceGuard: Eiswächter
+    LightningSphere: Blitz-Kugel
+    //Key				//Value
+}
+
+EffectText:{
+	FireBolt: Feuert einen Feuerblitz auf den Feind ab
+	FlamingHands: Feuern Sie Ventilatoren aus Ihren Händen, die diejenigen verbrennen, die sich in Reichweite befinden
+	IceGuard: Frostkugeln beschützen dich im Kampf
+	LightningSphere: Blitze sausen auf deine Feinde zu
+
+}
+
+
+SpellDamageTyp: {
+	acid: Säure
+	bludgeoning: zwingend
+	cold: kalt
+	fire: Feuer
+	force: Kraft
+	lightning: Blitz
+	necrotic: nekrotische
+	piercing: durchdringend
+	poison: Gift
+	psychic: psychisch
+	radiant: strahlend
+	slashing: schlitzend
+	thunder: Donner
+
+}
+
+
+SpellAttackType: {
+	cone : Kegel
+	line : Linie
+	radius : Umkreis
+	cube : Würfel
+	bolt : Bolzen
+
+}
+
+
+//any other things to translate
+

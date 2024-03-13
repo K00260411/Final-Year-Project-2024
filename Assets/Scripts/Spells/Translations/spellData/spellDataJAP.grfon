@@ -1,0 +1,48 @@
+//FRENCH FILE FOR INITIAL TESTING - GOOGLE TRANSLATED
+SpellName:{
+    FireBolt: ファイアボルト
+    FlamingHands: 炎の手
+    IceGuard: アイスガード
+    LightningSphere: ライトニングスフィア
+    //Key				//Value
+}
+
+EffectText:{
+	FireBolt: 敵に向かって火のボルトを発射する
+	FlamingHands: 扇風機を手から出して範囲内の扇風機を燃やす
+	IceGuard: フロストのオーブが戦いながらあなたを守ります
+	LightningSphere: 稲妻が敵に向かって突進する
+
+}
+
+
+SpellDamageTyp: {
+	acid: 酸
+	bludgeoning: 殴りつける
+	cold: 寒い 
+	fire: 火
+	force: 力
+	lightning: 稲妻
+	necrotic: 壊死性の
+	piercing: ピアス
+	poison: 毒
+	psychic: 超能力のある
+	radiant: 輝く
+	slashing: 斬りつける
+	thunder: 雷
+
+}
+
+
+SpellAttackType: {
+	cone: 円錐
+	line: ライン
+	radius: 半径
+	cube: 立方体
+	bolt: ボルト
+
+}
+
+
+//any other things to translate
+

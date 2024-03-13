@@ -7,23 +7,27 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     public float health;
-    [HideInInspector]public float moveSpeed;
+    [HideInInspector] public float moveSpeed;
     public float maxMoveSpeed;
     public float attackSpeed;
 
 
     //Refactor this into something better
-    public enum possibleResistances { acid, bludgeoning, cold, fire, force, lightning, necrotic, piercing, poison, psychic, radiant, slashing, thunder };
+/*    public enum possibleResistances { acid, bludgeoning, cold, fire, force, lightning, necrotic, piercing, poison, psychic, radiant, slashing, thunder };
     public enum possibleWeaknesses { acid, bludgeoning, cold, fire, force, lightning, necrotic, piercing, poison, psychic, radiant, slashing, thunder };
 
-    public enum possibleImmunities { acid, bludgeoning, cold, fire, force, lightning, necrotic, piercing, poison, psychic, radiant, slashing, thunder };
+    public enum possibleImmunities { acid, bludgeoning, cold, fire, force, lightning, necrotic, piercing, poison, psychic, radiant, slashing, thunder };*/
 
     public enum allElements { acid, bludgeoning, cold, fire, force, lightning, necrotic, piercing, poison, psychic, radiant, slashing, thunder };
 
 
-    public List<possibleWeaknesses> listOfWeaknesses;
+/*    public List<possibleWeaknesses> listOfWeaknesses;
     public List<possibleResistances> listOfResistances;
-    public List<possibleImmunities> listOfImmunities;
+    public List<possibleImmunities> listOfImmunities;*/
+
+    public List<allElements> weaknesses;
+    public List<allElements> resistances;
+    public List<allElements> immunities;
 
     public bool takingDOT = false;
     public float dotAmount = 0;
@@ -41,12 +45,12 @@ public class EnemyManager : MonoBehaviour
     {
         //Debug.Log("Health: " + health);
 
-/*        if(takingDOT == true)
-        {
-            takeSpellDOT(dotAmount, dotDamageDuration);
-        }*/
+        /*        if(takingDOT == true)
+                {
+                    takeSpellDOT(dotAmount, dotDamageDuration);
+                }*/
 
-        if(health <= 0)
+        if (health <= 0)
         {
             Destroy(this.gameObject);
         }
@@ -57,100 +61,117 @@ public class EnemyManager : MonoBehaviour
 
     }
 
-/*    public void triggerDOT(float damage, float duration)
-    {
-        //StartCoroutine(takeDOT(damage, duration));
-        float totalDamage = damage * duration;
-        takingDOT = true;
-        takeSpellDOT(damage, duration);
-    }*/
-
-    public void takeDamageFromSpell(SpellScriptableObject spellHitBy )
-    {
-/*        //Might be able to swap the arrays to a list so i can use the .contains function?
-        for (int i = 0; i < enemyImmunities.Length; i++) //switch enemy immunites to some static variable shared between classes that list all possible damage types, eI is just being used as a stand in //or maybe put this into an enemy scriptable?
+    /*    public void triggerDOT(float damage, float duration)
         {
-            //Check if the enemy is weak to the damage type taken
-            if (enemyWeaknesses[i].ToString() == spellHitBy.spellDamageTyp.ToString())
-            {
-                health -= spellHitBy.damage * 1.5f;
-            }
-            //Check if the enemy is resistant to the damage type taken
-            else if (enemyResistances[i].ToString() == spellHitBy.spellDamageTyp.ToString())
-            {
-                health -= spellHitBy.damage * 0.5f;
-            }
-
-            //Check if the enemy is immune to the damage type taken
-            else if(enemyImmunities[i].ToString() == spellHitBy.spellDamageTyp.ToString())
-            {
-                return; //exit the function
-            }
-
-            //THIS METHOD WILL CURRENTLY FAIL IF ALL DO NOT SHARE THE SAME LENGTH
+            //StartCoroutine(takeDOT(damage, duration));
+            float totalDamage = damage * duration;
+            takingDOT = true;
+            takeSpellDOT(damage, duration);
         }*/
 
+    public void takeDamageFromSpell(SpellScriptableObject spellHitBy)
+    {
+        /*        //Might be able to swap the arrays to a list so i can use the .contains function?
+                for (int i = 0; i < enemyImmunities.Length; i++) //switch enemy immunites to some static variable shared between classes that list all possible damage types, eI is just being used as a stand in //or maybe put this into an enemy scriptable?
+                {
+                    //Check if the enemy is weak to the damage type taken
+                    if (enemyWeaknesses[i].ToString() == spellHitBy.spellDamageTyp.ToString())
+                    {
+                        health -= spellHitBy.damage * 1.5f;
+                    }
+                    //Check if the enemy is resistant to the damage type taken
+                    else if (enemyResistances[i].ToString() == spellHitBy.spellDamageTyp.ToString())
+                    {
+                        health -= spellHitBy.damage * 0.5f;
+                    }
+
+                    //Check if the enemy is immune to the damage type taken
+                    else if(enemyImmunities[i].ToString() == spellHitBy.spellDamageTyp.ToString())
+                    {
+                        return; //exit the function
+                    }
+
+                    //THIS METHOD WILL CURRENTLY FAIL IF ALL DO NOT SHARE THE SAME LENGTH
+                }*/
+
         //Check if the enemy is immune to the damage type taken
-        if (listOfImmunities.Contains((possibleImmunities)spellHitBy.spellDamageTyp))
+        /*        if (listOfImmunities.Contains((possibleImmunities)spellHitBy.spellDamageTyp))
+                {
+                    return; //if immune just exit the function
+                }
+                //Check if the enemy is resistant to the damage type taken
+                else if (listOfResistances.Contains((possibleResistances)spellHitBy.spellDamageTyp))
+                {
+                    health -= spellHitBy.damage * 0.5f;
+                    return; //exit so we dont apply damage twice
+                }
+                //Check if the enemy is weak to the damage type taken
+                else if (listOfWeaknesses.Contains((possibleWeaknesses)spellHitBy.spellDamageTyp))
+                {
+                    health -= spellHitBy.damage * 1.5f;
+                    return; //exit so we dont apply damage twice
+                }*/
+
+
+        if (immunities.Contains((allElements)spellHitBy.spellDamageTyp))
         {
             return; //if immune just exit the function
         }
         //Check if the enemy is resistant to the damage type taken
-        else if (listOfResistances.Contains((possibleResistances)spellHitBy.spellDamageTyp))
+        else if (resistances.Contains((allElements)spellHitBy.spellDamageTyp))
         {
             health -= spellHitBy.damage * 0.5f;
             return; //exit so we dont apply damage twice
         }
         //Check if the enemy is weak to the damage type taken
-        else if (listOfWeaknesses.Contains((possibleWeaknesses)spellHitBy.spellDamageTyp))
+        else if (weaknesses.Contains((allElements)spellHitBy.spellDamageTyp))
         {
             health -= spellHitBy.damage * 1.5f;
-            return; //exit so we dont apply damage twice
+
+
+            //If not any of the above apply the basic amount of damage
+            health -= spellHitBy.damage;
         }
 
-
-        //If not any of the above apply the basic amount of damage
-        health -= spellHitBy.damage; 
-    }
-
-/*    IEnumerator takeDOT(float damage, float duration)
-    {
-        float i = 0;
-        while (true) //true is just while the coroutine is running
-        {
-*//*            health -= damage; //*Time.deltaTime;*//*
-            i = +1;
-            Debug.Log("Health:" + health);
-            //yield return new WaitForSeconds();
-            if (i >= duration)
+        /*    IEnumerator takeDOT(float damage, float duration)
             {
-                yield return null;
+                float i = 0;
+                while (true) //true is just while the coroutine is running
+                {
+        *//*            health -= damage; //*Time.deltaTime;*//*
+                    i = +1;
+                    Debug.Log("Health:" + health);
+                    //yield return new WaitForSeconds();
+                    if (i >= duration)
+                    {
+                        yield return null;
+                    }
+                    yield return null;
+                }
+
+
             }
-            yield return null;
-        }
-        
-        
+
+            public void takeSpellDOT(float dotAmountIn, float duration)
+            {
+                if(dotAmount == null || dotDamageTemp == null)
+                {
+                    dotAmount = dotAmountIn;
+                    dotDamageTemp = duration;
+                    //Debug.Log(dotAmount);
+                }
+                takingDOT = true;
+                health -= dotAmount * Time.deltaTime * 1;
+                dotDamageDuration += dotDamageTemp * Time.deltaTime * 1;
+                //Debug.Log(dotDamageDuration);
+                //Debug.Log(duration);
+
+                if(dotDamageDuration >= dotDamageTemp)
+                {
+                    takingDOT = false;
+                    dotAmount = 0;
+                    dotDamageDuration = 0;
+                }
+            }*/
     }
-
-    public void takeSpellDOT(float dotAmountIn, float duration)
-    {
-        if(dotAmount == null || dotDamageTemp == null)
-        {
-            dotAmount = dotAmountIn;
-            dotDamageTemp = duration;
-            //Debug.Log(dotAmount);
-        }
-        takingDOT = true;
-        health -= dotAmount * Time.deltaTime * 1;
-        dotDamageDuration += dotDamageTemp * Time.deltaTime * 1;
-        //Debug.Log(dotDamageDuration);
-        //Debug.Log(duration);
-
-        if(dotDamageDuration >= dotDamageTemp)
-        {
-            takingDOT = false;
-            dotAmount = 0;
-            dotDamageDuration = 0;
-        }
-    }*/
 }
