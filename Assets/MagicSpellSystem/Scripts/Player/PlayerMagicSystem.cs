@@ -95,7 +95,6 @@ public class PlayerMagicSystem : MonoBehaviour
                 //Loop through the array of spell slots the player has to see if the player has a slot of that spell level
                 for(int i =0; i< spellSlots.Length; i++)
                 {
-                    Debug.Log("Cost: " + spellToCast.spellToCast.spellCost);
                     //if the player has an equal or higher
                     if(i >= spellToCast.spellToCast.spellCost && spellSlots[i] > 0)
                     {
