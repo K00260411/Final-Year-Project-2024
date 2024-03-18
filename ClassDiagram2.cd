@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="scriptTexttest" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAEAAAAgAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Assets\Fonts\Script\scriptTexttest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyManager" Collapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAEAECAIJIAAAAAgAAAAAAAAAAAAAAQABAAAAEg=</HashCode>
+      <FileName>Assets\Scripts\EnemyManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="forwardAndBackMovement" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAgAAAAAAABAAAAAAAAAAAAgEA=</HashCode>
+      <FileName>Assets\Scripts\Movement\deadOrUnfinished\forwardAndBackMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RicochetMovement" Collapsed="true">
+    <Position X="17.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAIAAEAAAAIAAAICAAAAAIQAQAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Movement\deadOrUnfinished\RicochetMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ZigZagMovement" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="6.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAmAAAAAAAAAgAAAEAAAAAQCAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Movement\deadOrUnfinished\ZigZagMovement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="LinearMovement">
+    <Position X="15.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Movement\LinearMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrbitMovement">
+    <Position X="15.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAQAAAAAAAAABAAAAAAAQAAAAAAAAAAAAAhAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Movement\OrbitMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TeleportMovement">
+    <Position X="13.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAQAAABAAAAACAAAAAAAABABAAAAAQAQAAAAAAAAQEA=</HashCode>
+      <FileName>Assets\Scripts\Movement\TeleportMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TrackingMovement">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>FAQAAABAAAAECAAAAAAAABAAAAAAAQAQAAAAAAAAQEA=</HashCode>
+      <FileName>Assets\Scripts\Movement\TrackingMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WaveMovement">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAmAAAAAAAAAAAAAEAAAAAQCAAQAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Movement\WaveMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerMagicSystem">
+    <Position X="18" Y="3.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="PlayerMagicSystem.languages" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\PlayerMagicSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CiQAAIAKACAIACAAQAghwAAIAAAAACACABAgKwAAAEA=</HashCode>
+      <FileName>Assets\Scripts\PlayerMagicSystem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerManager" Collapsed="true">
+    <Position X="9.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAEAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Assets\Scripts\PlayerManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="spellCircle" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAACSAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAgAA=</HashCode>
+      <FileName>Assets\Scripts\spellCircle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="LineRayCast" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Spells\LineRayCast.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="damageCaster">
+    <Position X="5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Secondary Effect\casterEffects\damageCaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="healCaster">
+    <Position X="8" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Secondary Effect\casterEffects\healCaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DamageOverTime">
+    <Position X="27.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAIAAAAAABAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Secondary Effect\colliisonEffects\DamageOverTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HealOverTime">
+    <Position X="26" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAABAAAAAAAAAAAAAAAEAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Secondary Effect\colliisonEffects\HealOverTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="lowerGravity">
+    <Position X="29.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAgAAAAAAAAAAwAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Secondary Effect\colliisonEffects\lowerGravity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RemoveDotEffect">
+    <Position X="27.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Secondary Effect\colliisonEffects\RemoveEffects\RemoveDotEffect.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RemoveHealing">
+    <Position X="26" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAABAAAAAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Secondary Effect\colliisonEffects\RemoveEffects\RemoveHealing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RemoveLowerGravity">
+    <Position X="29.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Secondary Effect\colliisonEffects\RemoveEffects\RemoveLowerGravity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RemoveSpeedDebuff">
+    <Position X="24.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Secondary Effect\colliisonEffects\RemoveEffects\RemoveSpeedDebuff.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SlowEnemyMovement">
+    <Position X="24.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAQAAAAgAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Secondary Effect\colliisonEffects\SlowEnemyMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SecondaryStructure">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Secondary Effect\SecondaryStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Spell">
+    <Position X="22.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAADAAAAAAAAAAAAAAAAAAAAQCAACAQBIAAAAiAEA=</HashCode>
+      <FileName>Assets\Scripts\Spells\Spell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SpellScriptableObject">
+    <Position X="20.25" Y="3.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SpellScriptableObject.damageTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Spells\SpellScriptableObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="SpellScriptableObject.attackTypes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\Spells\SpellScriptableObject.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQQAAAAgEAAAAAAggAJAAAAAAAABMAAAgAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Spells\SpellScriptableObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GRFON.GrfonOutput" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAIAAAAAABAAAAAAAAAAAAAIAAAACEAAEAAA=</HashCode>
+      <FileName>Assets\Scripts\GRFON\GRFON.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GRFON.GrfonBufferOutput" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAAAAAAAAAAMAAAAiAAAACAAEAAA=</HashCode>
+      <FileName>Assets\Scripts\GRFON\GRFON.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GRFON.GrfonStreamOutput" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABACAAAAAAAAAAAAAAAAAAAAAECAAgAAAEAAA=</HashCode>
+      <FileName>Assets\Scripts\GRFON\GRFON.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GRFON.GrfonInput" Collapsed="true">
+    <Position X="1.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAABAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GRFON\GRFON.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GRFON.GrfonStringInput" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAABAAAAAAAAAAAAAAAAAIAACAAAAAgAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GRFON\GRFON.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GRFON.GrfonStreamInput" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAABCAAAAAAAAAAAAAAAAAAACAAAAAgAAAQAAA=</HashCode>
+      <FileName>Assets\Scripts\GRFON\GRFON.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GRFON.GrfonNode" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAAAAEAAABAAAAAAAAABAAAggAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GRFON\GRFON.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GRFON.GrfonValue" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAABAAAAAAAACBAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GRFON\GRFON.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GRFON.GrfonCollection" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAJAgAAAACAEABAAGQAgBAACIAAAAAgEAAAAAECAEAA=</HashCode>
+      <FileName>Assets\Scripts\GRFON\GRFON.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="GRFON.GrfonDeserializer" Collapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAMgAAAAAgAACAAAABAgAAIAFACAEJAQAAABAQAADAA=</HashCode>
+      <FileName>Assets\Scripts\GRFON\GRFON.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GRFON.GrfonStaticTests" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\GRFON\GRFON.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="GRFON.GrfonListEnumerator" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAECAIAAAAAAAAAAAoAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\GRFON\GRFON.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Interface Name="IMovement">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Interface\IMovement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

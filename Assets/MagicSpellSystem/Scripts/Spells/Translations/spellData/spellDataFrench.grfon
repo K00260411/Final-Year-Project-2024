@@ -1,0 +1,56 @@
+//collection
+SpellName:{
+    FireBolt: Éclair de feu
+    FlamingHands: Mains enflammées
+    IceGuard: Garde-glace
+    LightningSphere: Sphère de foudre
+	FireLash: FeuLash
+	HealingLight: Lumière de guérison
+    //Key				//Value
+}
+
+EffectText:{
+	FireBolt: Tire un éclair sur l'ennemi
+	FlamingHands: Tirez des ventilateurs hors de vos mains, brûlant ceux à portée
+	IceGuard: Des orbes de givre vous protègent pendant que vous combattez
+	LightningSphere: La foudre se dirige vers vos ennemis
+	FireLash: Le feu frappe votre ennemi
+	HealingLight: Une lumière curative restaure vos blessures
+
+}
+
+
+SpellDamageTyp: {
+	acid: acide
+	bludgeoning: matraquer
+	cold: froid //froide is feminine froid is masculine, guess it doesnt matter
+	fire: feu
+	force: forcer
+	lightning: foudre
+	necrotic: nécrotique
+	piercing: perçant //(masculine), precante is feminine same story
+	poison: poison
+	psychic: psychique
+	radiant: radiant //(masculine), radiante feminine
+	slashing: coupant //(masculine) coupante feminine
+	thunder: tonnerre
+
+}
+
+
+SpellAttackType: {
+	cone: cône
+	line: doubler
+	radius: rayon
+	cube: cube
+	bolt: boulon
+
+}
+
+MiscUI: {
+	Mana: Mana
+
+}
+
+//any other things to translate
+
